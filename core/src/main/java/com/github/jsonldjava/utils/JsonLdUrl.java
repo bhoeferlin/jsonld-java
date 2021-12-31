@@ -292,7 +292,7 @@ public class JsonLdUrl {
             }
             return new URI(uri.getScheme(), uri.getAuthority(), path, uri.getQuery(),
                     uri.getFragment()).toString();
-        } catch (final URISyntaxException e) {
+        } catch (final URISyntaxException | IllegalArgumentException e) {
             return null;
         }
     }

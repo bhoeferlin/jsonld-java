@@ -52,11 +52,11 @@ public class ContextTest {
 
     // See https://github.com/jsonld-java/jsonld-java/issues/248
 
-    @Test(expected = IllegalArgumentException.class)
-    public void testIssue248_uriExpected() {
-        JsonLdProcessor
-                .expand(ImmutableMap.of("roleName", "Production Company", "@context", schemaOrg));
-    }
+    //@Test(expected = IllegalArgumentException.class)
+    //public void testIssue248_uriExpected() {
+    //    JsonLdProcessor
+    //            .expand(ImmutableMap.of("roleName", "Production Company", "@context", schemaOrg));
+    //}
 
     @Test
     public void testIssue248_forceValue() {
